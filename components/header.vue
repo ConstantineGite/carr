@@ -4,18 +4,18 @@
               <md-field>
                 <md-input   :value="SaleCC"  v-model="sumSale" type="number"></md-input>
               <label for="saleCurrencys">Отдаю</label>
-              <md-select  v-model="saleCurrencys" name="saleCurrencys" id="saleCurrencys">
-                  <md-option  v-for="item in currencys" :key="item.cc" :value="item.cc" > {{ item.cc }} </md-option>
-              </md-select>
+              <select  v-model="saleCurrencys" name="saleCurrencys" id="saleCurrencys">
+                  <option  v-for="item in currencys" :key="item.cc" :value="item.cc" > {{ item.cc }} </option>
+              </select>
             </md-field>
         </div>
         <div class="md-layout-item">
             <md-field>
               <md-input  :value="BuyCC" type="number"></md-input>
             <label for="buyCurrencys">Получаю</label>
-            <md-select v-model="buyCurrencys" name="buyCurrencys" id="buyCurrencys">
-                <md-option v-for="item in currencys" :key="item.cc" :value="item.cc" > {{ item.cc }} </md-option>
-            </md-select>
+            <select v-model="buyCurrencys" name="buyCurrencys" id="buyCurrencys">
+                <option v-for="item in currencys" :key="item.cc" :value="item.cc" > {{ item.cc }} </option>
+            </select>
           </md-field>
         </div>
         </div>
